@@ -1,12 +1,12 @@
 /*!
-   * Bootstrap Utilities v5.2.0 (https://getbootstrap.com/)
+   * Bootstrap Grid v5.2.0 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
 /* line 1636, ../../../../../../../desafios/css avanzado/sass/scss/_variables.scss */
 .card .card-img-top, .card .card-body {
-  background-color: #000;
+  background-color: black;
 }
 
 /* line 1644, ../../../../../../../desafios/css avanzado/sass/scss/_variables.scss */
@@ -14,436 +14,1475 @@
   color: white;
 }
 
-/* line 3, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_clearfix.scss */
-.clearfix::after {
-  display: block;
-  clear: both;
-  content: "";
+/* line 1, ../../../../../../../desafios/css avanzado/sass/scss/_root.scss */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #ff7edf;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: white;
+  --bs-dark: black;
+  --bs-primary-rgb: 255, 126, 223;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 255, 255, 255;
+  --bs-dark-rgb: 0, 0, 0;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: "Vujahday Script", cursive;
+  --bs-font-monospace: "Vujahday Script", cursive;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: #ff7edf;
+  --bs-link-hover-color: #cc65b2;
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
 }
 
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-primary {
-  color: #000 !important;
-  background-color: RGBA(255, 126, 223, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-secondary {
-  color: #fff !important;
-  background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-success {
-  color: #fff !important;
-  background-color: RGBA(25, 135, 84, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-info {
-  color: #000 !important;
-  background-color: RGBA(13, 202, 240, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-warning {
-  color: #000 !important;
-  background-color: RGBA(255, 193, 7, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-danger {
-  color: #fff !important;
-  background-color: RGBA(220, 53, 69, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-light {
-  color: #000 !important;
-  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_color-bg.scss */
-.text-bg-dark {
-  color: #fff !important;
-  background-color: RGBA(0, 0, 0, var(--bs-bg-opacity, 1)) !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-primary {
-  color: #ff7edf !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-primary:hover, .link-primary:focus {
-  color: #ff98e5 !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-secondary {
-  color: #6c757d !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-success {
-  color: #198754 !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-success:hover, .link-success:focus {
-  color: #146c43 !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-info {
-  color: #0dcaf0 !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-info:hover, .link-info:focus {
-  color: #3dd5f3 !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-warning {
-  color: #ffc107 !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-danger {
-  color: #dc3545 !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-danger:hover, .link-danger:focus {
-  color: #b02a37 !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-light {
-  color: white !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-light:hover, .link-light:focus {
-  color: white !important;
-}
-
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-dark {
-  color: black !important;
-}
-
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_colored-links.scss */
-.link-dark:hover, .link-dark:focus {
-  color: black !important;
-}
-
-/* line 3, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio {
-  position: relative;
+/* line 7, ../../../../../../../desafios/css avanzado/sass/scss/_containers.scss */
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   width: 100%;
-}
-
-/* line 7, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio::before {
-  display: block;
-  padding-top: var(--bs-aspect-ratio);
-  content: "";
-}
-
-/* line 13, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 23, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio-1x1 {
-  --bs-aspect-ratio: 100%;
-}
-
-/* line 23, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
-}
-
-/* line 23, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
-}
-
-/* line 23, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_ratio.scss */
-.ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
-}
-
-/* line 3, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-/* line 11, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-/* line 24, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-
-/* line 30, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-.sticky-bottom {
-  position: sticky;
-  bottom: 0;
-  z-index: 1020;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
-  /* line 24, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-sm-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-  /* line 30, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-sm-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 1020;
+  /* line 20, ../../../../../../../desafios/css avanzado/sass/scss/_containers.scss */
+  .container, .container-sm {
+    max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 24, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-md-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-  /* line 30, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-md-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 1020;
+  /* line 20, ../../../../../../../desafios/css avanzado/sass/scss/_containers.scss */
+  .container, .container-sm, .container-md {
+    max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 24, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-lg-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-  /* line 30, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-lg-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 1020;
+  /* line 20, ../../../../../../../desafios/css avanzado/sass/scss/_containers.scss */
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 24, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-xl-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-  /* line 30, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-xl-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 1020;
+  /* line 20, ../../../../../../../desafios/css avanzado/sass/scss/_containers.scss */
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
   }
 }
 
 @media (min-width: 1400px) {
-  /* line 24, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-xxl-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-  /* line 30, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_position.scss */
-  .sticky-xxl-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 1020;
+  /* line 20, ../../../../../../../desafios/css avanzado/sass/scss/_containers.scss */
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1320px;
   }
 }
 
-/* line 2, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_stacks.scss */
-.hstack {
+/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/_grid.scss */
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: stretch;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 
-/* line 9, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_stacks.scss */
-.vstack {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  align-self: stretch;
+/* line 9, ../../../../../../../desafios/css avanzado/sass/scss/_grid.scss */
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
 }
 
-/* line 5, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_visually-hidden.scss */
-.visually-hidden,
-.visually-hidden-focusable:not(:focus):not(:focus-within) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+/* line 74, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col {
+  flex: 1 0 0%;
 }
 
-/* line 6, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_stretched-link.scss */
-.stretched-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
+/* line 78, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
 }
 
-/* line 5, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_text-truncation.scss */
-.text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
 }
 
-/* line 1, ../../../../../../../desafios/css avanzado/sass/scss/helpers/_vr.scss */
-.vr {
-  display: inline-block;
-  align-self: stretch;
-  width: 1px;
-  min-height: 1em;
-  background-color: currentcolor;
-  opacity: 0.25;
+/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.align-baseline {
-  vertical-align: baseline !important;
+/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-3 > * {
+  flex: 0 0 auto;
+  width: 33.33333%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.align-top {
-  vertical-align: top !important;
+/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-4 > * {
+  flex: 0 0 auto;
+  width: 25%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.align-middle {
-  vertical-align: middle !important;
+/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-5 > * {
+  flex: 0 0 auto;
+  width: 20%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.align-bottom {
-  vertical-align: bottom !important;
+/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.row-cols-6 > * {
+  flex: 0 0 auto;
+  width: 16.66667%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.align-text-bottom {
-  vertical-align: text-bottom !important;
+/* line 90, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.align-text-top {
-  vertical-align: text-top !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.float-start {
-  float: left !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66667%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.float-end {
-  float: right !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.float-none {
-  float: none !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.opacity-0 {
-  opacity: 0 !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66667%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.opacity-25 {
-  opacity: 0.25 !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.opacity-50 {
-  opacity: 0.5 !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.opacity-75 {
-  opacity: 0.75 !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66667%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.opacity-100 {
-  opacity: 1 !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.overflow-auto {
-  overflow: auto !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.overflow-hidden {
-  overflow: hidden !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66667%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.overflow-visible {
-  overflow: visible !important;
+/* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.overflow-scroll {
-  overflow: scroll !important;
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-3 {
+  margin-left: 25%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-6 {
+  margin-left: 50%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-9 {
+  margin-left: 75%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-0,
+.gx-0 {
+  --bs-gutter-x: 0;
+}
+
+/* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-0,
+.gy-0 {
+  --bs-gutter-y: 0;
+}
+
+/* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-1,
+.gx-1 {
+  --bs-gutter-x: 0.25rem;
+}
+
+/* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-1,
+.gy-1 {
+  --bs-gutter-y: 0.25rem;
+}
+
+/* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-2,
+.gx-2 {
+  --bs-gutter-x: 0.5rem;
+}
+
+/* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-2,
+.gy-2 {
+  --bs-gutter-y: 0.5rem;
+}
+
+/* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-3,
+.gx-3 {
+  --bs-gutter-x: 1rem;
+}
+
+/* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-3,
+.gy-3 {
+  --bs-gutter-y: 1rem;
+}
+
+/* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-4,
+.gx-4 {
+  --bs-gutter-x: 1.5rem;
+}
+
+/* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-4,
+.gy-4 {
+  --bs-gutter-y: 1.5rem;
+}
+
+/* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-5,
+.gx-5 {
+  --bs-gutter-x: 3rem;
+}
+
+/* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+.g-5,
+.gy-5 {
+  --bs-gutter-y: 3rem;
+}
+
+@media (min-width: 576px) {
+  /* line 74, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm {
+    flex: 1 0 0%;
+  }
+  /* line 78, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-3 > * {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-sm-6 > * {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 90, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-1 {
+    flex: 0 0 auto;
+    width: 8.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-5 {
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-7 {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-11 {
+    flex: 0 0 auto;
+    width: 91.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-sm-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-0,
+  .gx-sm-0 {
+    --bs-gutter-x: 0;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-0,
+  .gy-sm-0 {
+    --bs-gutter-y: 0;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-1,
+  .gx-sm-1 {
+    --bs-gutter-x: 0.25rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-1,
+  .gy-sm-1 {
+    --bs-gutter-y: 0.25rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-2,
+  .gx-sm-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-2,
+  .gy-sm-2 {
+    --bs-gutter-y: 0.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-3,
+  .gx-sm-3 {
+    --bs-gutter-x: 1rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-3,
+  .gy-sm-3 {
+    --bs-gutter-y: 1rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-4,
+  .gx-sm-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-4,
+  .gy-sm-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-5,
+  .gx-sm-5 {
+    --bs-gutter-x: 3rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-sm-5,
+  .gy-sm-5 {
+    --bs-gutter-y: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 74, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md {
+    flex: 1 0 0%;
+  }
+  /* line 78, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-3 > * {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-md-6 > * {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 90, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-11 {
+    flex: 0 0 auto;
+    width: 91.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-0 {
+    margin-left: 0;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-md-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-0,
+  .gx-md-0 {
+    --bs-gutter-x: 0;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-0,
+  .gy-md-0 {
+    --bs-gutter-y: 0;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-1,
+  .gx-md-1 {
+    --bs-gutter-x: 0.25rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-1,
+  .gy-md-1 {
+    --bs-gutter-y: 0.25rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-2,
+  .gx-md-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-2,
+  .gy-md-2 {
+    --bs-gutter-y: 0.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-3,
+  .gx-md-3 {
+    --bs-gutter-x: 1rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-3,
+  .gy-md-3 {
+    --bs-gutter-y: 1rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-4,
+  .gx-md-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-4,
+  .gy-md-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-5,
+  .gx-md-5 {
+    --bs-gutter-x: 3rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-md-5,
+  .gy-md-5 {
+    --bs-gutter-y: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 74, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg {
+    flex: 1 0 0%;
+  }
+  /* line 78, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-3 > * {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-lg-6 > * {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 90, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-11 {
+    flex: 0 0 auto;
+    width: 91.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-lg-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-0,
+  .gx-lg-0 {
+    --bs-gutter-x: 0;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-0,
+  .gy-lg-0 {
+    --bs-gutter-y: 0;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-1,
+  .gx-lg-1 {
+    --bs-gutter-x: 0.25rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-1,
+  .gy-lg-1 {
+    --bs-gutter-y: 0.25rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-2,
+  .gx-lg-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-2,
+  .gy-lg-2 {
+    --bs-gutter-y: 0.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-3,
+  .gx-lg-3 {
+    --bs-gutter-x: 1rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-3,
+  .gy-lg-3 {
+    --bs-gutter-y: 1rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-4,
+  .gx-lg-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-4,
+  .gy-lg-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-5,
+  .gx-lg-5 {
+    --bs-gutter-x: 3rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-lg-5,
+  .gy-lg-5 {
+    --bs-gutter-y: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 74, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl {
+    flex: 1 0 0%;
+  }
+  /* line 78, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-3 > * {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xl-6 > * {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 90, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-1 {
+    flex: 0 0 auto;
+    width: 8.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-2 {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-4 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-5 {
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-7 {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-8 {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-11 {
+    flex: 0 0 auto;
+    width: 91.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xl-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-0,
+  .gx-xl-0 {
+    --bs-gutter-x: 0;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-0,
+  .gy-xl-0 {
+    --bs-gutter-y: 0;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-1,
+  .gx-xl-1 {
+    --bs-gutter-x: 0.25rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-1,
+  .gy-xl-1 {
+    --bs-gutter-y: 0.25rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-2,
+  .gx-xl-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-2,
+  .gy-xl-2 {
+    --bs-gutter-y: 0.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-3,
+  .gx-xl-3 {
+    --bs-gutter-x: 1rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-3,
+  .gy-xl-3 {
+    --bs-gutter-y: 1rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-4,
+  .gx-xl-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-4,
+  .gy-xl-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-5,
+  .gx-xl-5 {
+    --bs-gutter-x: 3rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xl-5,
+  .gy-xl-5 {
+    --bs-gutter-y: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* line 74, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl {
+    flex: 1 0 0%;
+  }
+  /* line 78, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-3 > * {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  /* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .row-cols-xxl-6 > * {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 90, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-1 {
+    flex: 0 0 auto;
+    width: 8.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-2 {
+    flex: 0 0 auto;
+    width: 16.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-5 {
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-7 {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-8 {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-11 {
+    flex: 0 0 auto;
+    width: 91.66667%;
+  }
+  /* line 96, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .col-xxl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-0 {
+    margin-left: 0;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-3 {
+    margin-left: 25%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-6 {
+    margin-left: 50%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-9 {
+    margin-left: 75%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 104, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .offset-xxl-11 {
+    margin-left: 91.66667%;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-0,
+  .gx-xxl-0 {
+    --bs-gutter-x: 0;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-0,
+  .gy-xxl-0 {
+    --bs-gutter-y: 0;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-1,
+  .gx-xxl-1 {
+    --bs-gutter-x: 0.25rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-1,
+  .gy-xxl-1 {
+    --bs-gutter-y: 0.25rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-2,
+  .gx-xxl-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-2,
+  .gy-xxl-2 {
+    --bs-gutter-y: 0.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-3,
+  .gx-xxl-3 {
+    --bs-gutter-x: 1rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-3,
+  .gy-xxl-3 {
+    --bs-gutter-y: 1rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-4,
+  .gx-xxl-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-4,
+  .gy-xxl-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+  /* line 115, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-5,
+  .gx-xxl-5 {
+    --bs-gutter-x: 3rem;
+  }
+  /* line 120, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_grid.scss */
+  .g-xxl-5,
+  .gy-xxl-5 {
+    --bs-gutter-y: 3rem;
+  }
 }
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
@@ -494,360 +1533,6 @@
 /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
 .d-none {
   display: none !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.shadow-none {
-  box-shadow: none !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.position-static {
-  position: static !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.position-relative {
-  position: relative !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.position-absolute {
-  position: absolute !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.position-fixed {
-  position: fixed !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.position-sticky {
-  position: sticky !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.top-0 {
-  top: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.top-50 {
-  top: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.top-100 {
-  top: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bottom-0 {
-  bottom: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bottom-50 {
-  bottom: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bottom-100 {
-  bottom: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.start-0 {
-  left: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.start-50 {
-  left: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.start-100 {
-  left: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.end-0 {
-  right: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.end-50 {
-  right: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.end-100 {
-  right: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.translate-middle {
-  transform: translate(-50%, -50%) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.translate-middle-x {
-  transform: translateX(-50%) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.translate-middle-y {
-  transform: translateY(-50%) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border {
-  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-0 {
-  border: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-top {
-  border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-top-0 {
-  border-top: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-end {
-  border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-end-0 {
-  border-right: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-bottom {
-  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-bottom-0 {
-  border-bottom: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-start {
-  border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-start-0 {
-  border-left: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-primary {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-secondary {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-success {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-info {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-info-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-warning {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-warning-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-danger {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-danger-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-light {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-light-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-dark {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-white {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-1 {
-  --bs-border-width: 1px;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-2 {
-  --bs-border-width: 2px;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-3 {
-  --bs-border-width: 3px;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-4 {
-  --bs-border-width: 4px;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-5 {
-  --bs-border-width: 5px;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-opacity-10 {
-  --bs-border-opacity: 0.1;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-opacity-25 {
-  --bs-border-opacity: 0.25;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-opacity-50 {
-  --bs-border-opacity: 0.5;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-opacity-75 {
-  --bs-border-opacity: 0.75;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.border-opacity-100 {
-  --bs-border-opacity: 1;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.w-25 {
-  width: 25% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.w-50 {
-  width: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.w-75 {
-  width: 75% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.w-100 {
-  width: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.w-auto {
-  width: auto !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.mw-100 {
-  max-width: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.vw-100 {
-  width: 100vw !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.min-vw-100 {
-  min-width: 100vw !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.h-25 {
-  height: 25% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.h-50 {
-  height: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.h-75 {
-  height: 75% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.h-100 {
-  height: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.h-auto {
-  height: auto !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.mh-100 {
-  max-height: 100% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.vh-100 {
-  height: 100vh !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.min-vh-100 {
-  min-height: 100vh !important;
 }
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
@@ -1546,523 +2231,7 @@
   padding-left: 3rem !important;
 }
 
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.gap-0 {
-  gap: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.gap-1 {
-  gap: 0.25rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.gap-2 {
-  gap: 0.5rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.gap-3 {
-  gap: 1rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.gap-4 {
-  gap: 1.5rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.gap-5 {
-  gap: 3rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.font-monospace {
-  font-family: var(--bs-font-monospace) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fs-5 {
-  font-size: 1.25rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fs-6 {
-  font-size: 1rem !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fst-italic {
-  font-style: italic !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fst-normal {
-  font-style: normal !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fw-light {
-  font-weight: 300 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fw-lighter {
-  font-weight: lighter !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fw-normal {
-  font-weight: 400 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fw-bold {
-  font-weight: 700 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fw-semibold {
-  font-weight: 600 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.fw-bolder {
-  font-weight: bolder !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.lh-1 {
-  line-height: 1 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.lh-sm {
-  line-height: 1.25 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.lh-base {
-  line-height: 1.5 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.lh-lg {
-  line-height: 2 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-start {
-  text-align: left !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-end {
-  text-align: right !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-center {
-  text-align: center !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-decoration-none {
-  text-decoration: none !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-decoration-underline {
-  text-decoration: underline !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-decoration-line-through {
-  text-decoration: line-through !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-capitalize {
-  text-transform: capitalize !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-wrap {
-  white-space: normal !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-nowrap {
-  white-space: nowrap !important;
-}
-
-/* rtl:begin:remove */
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-break {
-  word-wrap: break-word !important;
-  word-break: break-word !important;
-}
-
-/* rtl:end:remove */
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-primary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-secondary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-success {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-info {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-warning {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-danger {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-light {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-dark {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-black {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-white {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-body {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-black-50 {
-  --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-white-50 {
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-reset {
-  --bs-text-opacity: 1;
-  color: inherit !important;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-opacity-25 {
-  --bs-text-opacity: 0.25;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-opacity-50 {
-  --bs-text-opacity: 0.5;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-opacity-75 {
-  --bs-text-opacity: 0.75;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.text-opacity-100 {
-  --bs-text-opacity: 1;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-secondary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-success {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-info {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-warning {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-danger {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-black {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-white {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-body {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-transparent {
-  --bs-bg-opacity: 1;
-  background-color: transparent !important;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-opacity-10 {
-  --bs-bg-opacity: 0.1;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-opacity-25 {
-  --bs-bg-opacity: 0.25;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-opacity-50 {
-  --bs-bg-opacity: 0.5;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-opacity-75 {
-  --bs-bg-opacity: 0.75;
-}
-
-/* line 57, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-opacity-100 {
-  --bs-bg-opacity: 1;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.bg-gradient {
-  background-image: var(--bs-gradient) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.user-select-all {
-  user-select: all !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.user-select-auto {
-  user-select: auto !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.user-select-none {
-  user-select: none !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.pe-none {
-  pointer-events: none !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.pe-auto {
-  pointer-events: auto !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded {
-  border-radius: var(--bs-border-radius) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-0 {
-  border-radius: 0 !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-1 {
-  border-radius: var(--bs-border-radius-sm) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-2 {
-  border-radius: var(--bs-border-radius) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-3 {
-  border-radius: var(--bs-border-radius-lg) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-4 {
-  border-radius: var(--bs-border-radius-xl) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-5 {
-  border-radius: var(--bs-border-radius-2xl) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-circle {
-  border-radius: 50% !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-pill {
-  border-radius: var(--bs-border-radius-pill) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-top {
-  border-top-left-radius: var(--bs-border-radius) !important;
-  border-top-right-radius: var(--bs-border-radius) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-end {
-  border-top-right-radius: var(--bs-border-radius) !important;
-  border-bottom-right-radius: var(--bs-border-radius) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-bottom {
-  border-bottom-right-radius: var(--bs-border-radius) !important;
-  border-bottom-left-radius: var(--bs-border-radius) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.rounded-start {
-  border-bottom-left-radius: var(--bs-border-radius) !important;
-  border-top-left-radius: var(--bs-border-radius) !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.visible {
-  visibility: visible !important;
-}
-
-/* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-.invisible {
-  visibility: hidden !important;
-}
-
 @media (min-width: 576px) {
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-sm-start {
-    float: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-sm-end {
-    float: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-sm-none {
-    float: none !important;
-  }
   /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
   .d-sm-inline {
     display: inline !important;
@@ -2665,57 +2834,9 @@
   .ps-sm-5 {
     padding-left: 3rem !important;
   }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-sm-0 {
-    gap: 0 !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-sm-1 {
-    gap: 0.25rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-sm-2 {
-    gap: 0.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-sm-3 {
-    gap: 1rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-sm-4 {
-    gap: 1.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-sm-5 {
-    gap: 3rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-sm-start {
-    text-align: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-sm-end {
-    text-align: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-sm-center {
-    text-align: center !important;
-  }
 }
 
 @media (min-width: 768px) {
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-md-start {
-    float: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-md-end {
-    float: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-md-none {
-    float: none !important;
-  }
   /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
   .d-md-inline {
     display: inline !important;
@@ -3318,57 +3439,9 @@
   .ps-md-5 {
     padding-left: 3rem !important;
   }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-md-0 {
-    gap: 0 !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-md-1 {
-    gap: 0.25rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-md-2 {
-    gap: 0.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-md-3 {
-    gap: 1rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-md-4 {
-    gap: 1.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-md-5 {
-    gap: 3rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-md-start {
-    text-align: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-md-end {
-    text-align: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-md-center {
-    text-align: center !important;
-  }
 }
 
 @media (min-width: 992px) {
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-lg-start {
-    float: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-lg-end {
-    float: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-lg-none {
-    float: none !important;
-  }
   /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
   .d-lg-inline {
     display: inline !important;
@@ -3971,57 +4044,9 @@
   .ps-lg-5 {
     padding-left: 3rem !important;
   }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-lg-0 {
-    gap: 0 !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-lg-1 {
-    gap: 0.25rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-lg-2 {
-    gap: 0.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-lg-3 {
-    gap: 1rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-lg-4 {
-    gap: 1.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-lg-5 {
-    gap: 3rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-lg-start {
-    text-align: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-lg-end {
-    text-align: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-lg-center {
-    text-align: center !important;
-  }
 }
 
 @media (min-width: 1200px) {
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-xl-start {
-    float: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-xl-end {
-    float: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-xl-none {
-    float: none !important;
-  }
   /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
   .d-xl-inline {
     display: inline !important;
@@ -4624,57 +4649,9 @@
   .ps-xl-5 {
     padding-left: 3rem !important;
   }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xl-0 {
-    gap: 0 !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xl-1 {
-    gap: 0.25rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xl-2 {
-    gap: 0.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xl-3 {
-    gap: 1rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xl-4 {
-    gap: 1.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xl-5 {
-    gap: 3rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-xl-start {
-    text-align: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-xl-end {
-    text-align: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-xl-center {
-    text-align: center !important;
-  }
 }
 
 @media (min-width: 1400px) {
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-xxl-start {
-    float: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-xxl-end {
-    float: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .float-xxl-none {
-    float: none !important;
-  }
   /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
   .d-xxl-inline {
     display: inline !important;
@@ -5277,61 +5254,6 @@
   .ps-xxl-5 {
     padding-left: 3rem !important;
   }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xxl-0 {
-    gap: 0 !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xxl-1 {
-    gap: 0.25rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xxl-2 {
-    gap: 0.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xxl-3 {
-    gap: 1rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xxl-4 {
-    gap: 1.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .gap-xxl-5 {
-    gap: 3rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-xxl-start {
-    text-align: left !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-xxl-end {
-    text-align: right !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .text-xxl-center {
-    text-align: center !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .fs-1 {
-    font-size: 2.5rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .fs-2 {
-    font-size: 2rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .fs-3 {
-    font-size: 1.75rem !important;
-  }
-  /* line 67, ../../../../../../../desafios/css avanzado/sass/scss/mixins/_utilities.scss */
-  .fs-4 {
-    font-size: 1.5rem !important;
-  }
 }
 
 @media print {
@@ -5377,4 +5299,4 @@
   }
 }
 
-/*# sourceMappingURL=bootstrap-utilities.css.map */
+/*# sourceMappingURL=bootstrap-grid.css.map */

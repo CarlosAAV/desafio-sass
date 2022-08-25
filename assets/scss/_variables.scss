@@ -1634,7 +1634,7 @@ $pre-color:                         null !default;
 
 .card{
 .card-img-top{
-  background-color: #000;
+  background-color: $dark;
 }
 
 .card-body{
@@ -1642,7 +1642,7 @@ $pre-color:                         null !default;
 }
 
 .card-title{
-  color:white;
+  color:$light;
 }
 .card-text{
  @extend .card-title; 
