@@ -304,11 +304,11 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         red !default;
-$dark:          yellow !default;
-$rosado:        rgb(165, 53, 187);
-$negro:         rgb(41, 41, 41);
-$blanco:         rgb(255, 255, 255);
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default; 
+$fondo:         rgb(49, 49, 49) !default;
+$letra:       white !default;
+$boton:         rgb(181, 42, 185) !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -321,6 +321,9 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+  "fondo":      $fondo,
+  "letra":     $letra,
+  "boton":      $boton,    
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -543,8 +546,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      'Vujahday Script', cursive  !default;
-$font-family-monospace:       'Vujahday Script', cursive !default;
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
 $font-family-code:            var(--#{$prefix}font-monospace) !default;
@@ -1635,26 +1638,27 @@ $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, remo
 
 $pre-color:                         null !default;
 
-.card{
-.card-img-top{
-  background-color: $negro;
+
+
+.card-sass{
+  background-color: $fondo;
+  color: $letra;
+}
+
+  .card{
+  .card-img-top{
+   background-color: $fondo;
+   color: $letra;
+  }
+  .card-body{
+    @extend .card-img-top;
+  }
+  a{
+    background-color: $boton;
+  }
+
+}
+
+
+
   
-}
-.card-body{
-  @extend .card-img-top;
-}
-
-
-.card-title{
-  color:$blanco;
-}
-.card-text{
- @extend .card-title; 
-} 
-a{
-  @extend .card-title;
-  background-color: $rosado;
-}
-}
-
-

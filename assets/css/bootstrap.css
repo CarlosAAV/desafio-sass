@@ -4,19 +4,21 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-/* line 1639, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
-.card .card-img-top, .card .card-body {
-  background-color: #292929;
-}
-
-/* line 1648, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
-.card .card-title, .card .card-text, .card a {
+/* line 1643, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+.card-sass {
+  background-color: #313131;
   color: white;
 }
 
-/* line 1654, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+/* line 1649, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+.card .card-img-top, .card .card-body {
+  background-color: #313131;
+  color: white;
+}
+
+/* line 1656, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card a {
-  background-color: #a535bb;
+  background-color: #b52ab9;
 }
 
 /* line 1, ../../../../../../../desafios/css avanzado/sass/assets/scss/_root.scss */
@@ -50,22 +52,28 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: red;
-  --bs-dark: yellow;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-fondo: #313131;
+  --bs-letra: white;
+  --bs-boton: #b52ab9;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 255, 0, 0;
-  --bs-dark-rgb: 255, 255, 0;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-fondo-rgb: 49, 49, 49;
+  --bs-letra-rgb: 255, 255, 255;
+  --bs-boton-rgb: 181, 42, 185;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Vujahday Script", cursive;
-  --bs-font-monospace: "Vujahday Script", cursive;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
@@ -2344,29 +2352,29 @@ progress {
 /* line 3, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_table-variants.scss */
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: red;
-  --bs-table-border-color: #e60000;
-  --bs-table-striped-bg: #f20000;
+  --bs-table-bg: #f8f9fa;
+  --bs-table-border-color: #dfe0e1;
+  --bs-table-striped-bg: #ecedee;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e60000;
-  --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #ec0000;
-  --bs-table-hover-color: #fff;
+  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
 
 /* line 3, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_table-variants.scss */
 .table-dark {
-  --bs-table-color: #000;
-  --bs-table-bg: yellow;
-  --bs-table-border-color: #e6e600;
-  --bs-table-striped-bg: #f2f200;
-  --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6e600;
-  --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ecec00;
-  --bs-table-hover-color: #000;
+  --bs-table-color: #fff;
+  --bs-table-bg: #212529;
+  --bs-table-border-color: #373b3e;
+  --bs-table-striped-bg: #2c3034;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #373b3e;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #323539;
+  --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
@@ -3613,37 +3621,91 @@ fieldset:disabled .btn {
 /* line 105, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: red;
-  --bs-btn-border-color: red;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d90000;
-  --bs-btn-hover-border-color: #cc0000;
-  --bs-btn-focus-shadow-rgb: 217, 0, 0;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #cc0000;
-  --bs-btn-active-border-color: #bf0000;
+  --bs-btn-bg: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #d3d4d5;
+  --bs-btn-hover-border-color: #c6c7c8;
+  --bs-btn-focus-shadow-rgb: 211, 212, 213;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #c6c7c8;
+  --bs-btn-active-border-color: #babbbc;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: red;
-  --bs-btn-disabled-border-color: red;
+  --bs-btn-disabled-bg: #f8f9fa;
+  --bs-btn-disabled-border-color: #f8f9fa;
 }
 
 /* line 105, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
 .btn-dark {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #212529;
+  --bs-btn-border-color: #212529;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #424649;
+  --bs-btn-hover-border-color: #373b3e;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4d5154;
+  --bs-btn-active-border-color: #373b3e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #212529;
+  --bs-btn-disabled-border-color: #212529;
+}
+
+/* line 105, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
+.btn-fondo {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #313131;
+  --bs-btn-border-color: #313131;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2a2a2a;
+  --bs-btn-hover-border-color: #272727;
+  --bs-btn-focus-shadow-rgb: 80, 80, 80;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #272727;
+  --bs-btn-active-border-color: #252525;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #313131;
+  --bs-btn-disabled-border-color: #313131;
+}
+
+/* line 105, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
+.btn-letra {
   --bs-btn-color: #000;
-  --bs-btn-bg: yellow;
-  --bs-btn-border-color: yellow;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: white;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ffff26;
-  --bs-btn-hover-border-color: #ffff1a;
-  --bs-btn-focus-shadow-rgb: 217, 217, 0;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: 217, 217, 217;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ffff33;
-  --bs-btn-active-border-color: #ffff1a;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: yellow;
-  --bs-btn-disabled-border-color: yellow;
+  --bs-btn-disabled-bg: white;
+  --bs-btn-disabled-border-color: white;
+}
+
+/* line 105, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
+.btn-boton {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #b52ab9;
+  --bs-btn-border-color: #b52ab9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #9a249d;
+  --bs-btn-hover-border-color: #912294;
+  --bs-btn-focus-shadow-rgb: 192, 74, 196;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #912294;
+  --bs-btn-active-border-color: #88208b;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #b52ab9;
+  --bs-btn-disabled-border-color: #b52ab9;
 }
 
 /* line 131, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
@@ -3756,37 +3818,91 @@ fieldset:disabled .btn {
 
 /* line 131, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
 .btn-outline-light {
-  --bs-btn-color: red;
-  --bs-btn-border-color: red;
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: red;
-  --bs-btn-hover-border-color: red;
-  --bs-btn-focus-shadow-rgb: 255, 0, 0;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-focus-shadow-rgb: 248, 249, 250;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: red;
-  --bs-btn-active-border-color: red;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: red;
+  --bs-btn-disabled-color: #f8f9fa;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: red;
+  --bs-btn-disabled-border-color: #f8f9fa;
   --bs-gradient: none;
 }
 
 /* line 131, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
 .btn-outline-dark {
-  --bs-btn-color: yellow;
-  --bs-btn-border-color: yellow;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: yellow;
-  --bs-btn-hover-border-color: yellow;
-  --bs-btn-focus-shadow-rgb: 255, 255, 0;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: yellow;
-  --bs-btn-active-border-color: yellow;
+  --bs-btn-color: #212529;
+  --bs-btn-border-color: #212529;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #212529;
+  --bs-btn-hover-border-color: #212529;
+  --bs-btn-focus-shadow-rgb: 33, 37, 41;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #212529;
+  --bs-btn-active-border-color: #212529;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: yellow;
+  --bs-btn-disabled-color: #212529;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: yellow;
+  --bs-btn-disabled-border-color: #212529;
+  --bs-gradient: none;
+}
+
+/* line 131, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
+.btn-outline-fondo {
+  --bs-btn-color: #313131;
+  --bs-btn-border-color: #313131;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #313131;
+  --bs-btn-hover-border-color: #313131;
+  --bs-btn-focus-shadow-rgb: 49, 49, 49;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #313131;
+  --bs-btn-active-border-color: #313131;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #313131;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #313131;
+  --bs-gradient: none;
+}
+
+/* line 131, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
+.btn-outline-letra {
+  --bs-btn-color: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: white;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: white;
+  --bs-gradient: none;
+}
+
+/* line 131, ../../../../../../../desafios/css avanzado/sass/assets/scss/_buttons.scss */
+.btn-outline-boton {
+  --bs-btn-color: #b52ab9;
+  --bs-btn-border-color: #b52ab9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #b52ab9;
+  --bs-btn-hover-border-color: #b52ab9;
+  --bs-btn-focus-shadow-rgb: 181, 42, 185;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b52ab9;
+  --bs-btn-active-border-color: #b52ab9;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #b52ab9;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #b52ab9;
   --bs-gradient: none;
 }
 
@@ -5148,7 +5264,7 @@ fieldset:disabled .btn {
 }
 
 /* line 74, ../../../../../../../desafios/css avanzado/sass/assets/scss/_card.scss */
-.card-title, .card .card-text, .card a {
+.card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
 
@@ -5771,26 +5887,62 @@ fieldset:disabled .btn {
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/_alert.scss */
 .alert-light {
-  --bs-alert-color: #990000;
-  --bs-alert-bg: #ffcccc;
-  --bs-alert-border-color: #ffb3b3;
+  --bs-alert-color: #636464;
+  --bs-alert-bg: #fefefe;
+  --bs-alert-border-color: #fdfdfe;
 }
 
 /* line 11, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_alert.scss */
 .alert-light .alert-link {
-  color: #7a0000;
+  color: #4f5050;
 }
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/_alert.scss */
 .alert-dark {
-  --bs-alert-color: #666600;
-  --bs-alert-bg: #ffffcc;
-  --bs-alert-border-color: #ffffb3;
+  --bs-alert-color: #141619;
+  --bs-alert-bg: #d3d3d4;
+  --bs-alert-border-color: #bcbebf;
 }
 
 /* line 11, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_alert.scss */
 .alert-dark .alert-link {
-  color: #525200;
+  color: #101214;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/_alert.scss */
+.alert-fondo {
+  --bs-alert-color: #1d1d1d;
+  --bs-alert-bg: #d6d6d6;
+  --bs-alert-border-color: #c1c1c1;
+}
+
+/* line 11, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_alert.scss */
+.alert-fondo .alert-link {
+  color: #171717;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/_alert.scss */
+.alert-letra {
+  --bs-alert-color: #666666;
+  --bs-alert-bg: white;
+  --bs-alert-border-color: white;
+}
+
+/* line 11, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_alert.scss */
+.alert-letra .alert-link {
+  color: #525252;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/_alert.scss */
+.alert-boton {
+  --bs-alert-color: #6d196f;
+  --bs-alert-bg: #f0d4f1;
+  --bs-alert-border-color: #e9bfea;
+}
+
+/* line 11, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_alert.scss */
+.alert-boton .alert-link {
+  color: #571459;
 }
 
 @keyframes progress-bar-stripes {
@@ -6283,40 +6435,97 @@ fieldset:disabled .btn {
 
 /* line 5, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
 .list-group-item-light {
-  color: #990000;
-  background-color: #ffcccc;
+  color: #636464;
+  background-color: #fefefe;
 }
 
 /* line 10, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #990000;
-  background-color: #e6b8b8;
+  color: #636464;
+  background-color: #e5e5e5;
 }
 
 /* line 16, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
-  background-color: #990000;
-  border-color: #990000;
+  background-color: #636464;
+  border-color: #636464;
 }
 
 /* line 5, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
 .list-group-item-dark {
-  color: #666600;
-  background-color: #ffffcc;
+  color: #141619;
+  background-color: #d3d3d4;
 }
 
 /* line 10, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: #666600;
-  background-color: #e6e6b8;
+  color: #141619;
+  background-color: #bebebf;
 }
 
 /* line 16, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
 .list-group-item-dark.list-group-item-action.active {
   color: #fff;
-  background-color: #666600;
-  border-color: #666600;
+  background-color: #141619;
+  border-color: #141619;
+}
+
+/* line 5, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-fondo {
+  color: #1d1d1d;
+  background-color: #d6d6d6;
+}
+
+/* line 10, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-fondo.list-group-item-action:hover, .list-group-item-fondo.list-group-item-action:focus {
+  color: #1d1d1d;
+  background-color: #c1c1c1;
+}
+
+/* line 16, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-fondo.list-group-item-action.active {
+  color: #fff;
+  background-color: #1d1d1d;
+  border-color: #1d1d1d;
+}
+
+/* line 5, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-letra {
+  color: #666666;
+  background-color: white;
+}
+
+/* line 10, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-letra.list-group-item-action:hover, .list-group-item-letra.list-group-item-action:focus {
+  color: #666666;
+  background-color: #e6e6e6;
+}
+
+/* line 16, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-letra.list-group-item-action.active {
+  color: #fff;
+  background-color: #666666;
+  border-color: #666666;
+}
+
+/* line 5, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-boton {
+  color: #6d196f;
+  background-color: #f0d4f1;
+}
+
+/* line 10, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-boton.list-group-item-action:hover, .list-group-item-boton.list-group-item-action:focus {
+  color: #6d196f;
+  background-color: #d8bfd9;
+}
+
+/* line 16, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_list-group.scss */
+.list-group-item-boton.list-group-item-action.active {
+  color: #fff;
+  background-color: #6d196f;
+  border-color: #6d196f;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/_close.scss */
@@ -8129,13 +8338,31 @@ fieldset:disabled .btn {
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
 .text-bg-light {
   color: #000 !important;
-  background-color: RGBA(255, 0, 0, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(248, 249, 250, var(--bs-bg-opacity, 1)) !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
 .text-bg-dark {
+  color: #fff !important;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
+.text-bg-fondo {
+  color: #fff !important;
+  background-color: RGBA(49, 49, 49, var(--bs-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
+.text-bg-letra {
   color: #000 !important;
-  background-color: RGBA(255, 255, 0, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
+.text-bg-boton {
+  color: #fff !important;
+  background-color: RGBA(181, 42, 185, var(--bs-bg-opacity, 1)) !important;
 }
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
@@ -8200,22 +8427,52 @@ fieldset:disabled .btn {
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-light {
-  color: red !important;
+  color: #f8f9fa !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-light:hover, .link-light:focus {
-  color: #ff3333 !important;
+  color: #f9fafb !important;
 }
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-dark {
-  color: yellow !important;
+  color: #212529 !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-dark:hover, .link-dark:focus {
-  color: #ffff33 !important;
+  color: #1a1e21 !important;
+}
+
+/* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
+.link-fondo {
+  color: #313131 !important;
+}
+
+/* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
+.link-fondo:hover, .link-fondo:focus {
+  color: #272727 !important;
+}
+
+/* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
+.link-letra {
+  color: white !important;
+}
+
+/* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
+.link-letra:hover, .link-letra:focus {
+  color: white !important;
+}
+
+/* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
+.link-boton {
+  color: #b52ab9 !important;
+}
+
+/* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
+.link-boton:hover, .link-boton:focus {
+  color: #912294 !important;
 }
 
 /* line 3, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_ratio.scss */
@@ -8781,6 +9038,24 @@ fieldset:disabled .btn {
 .border-dark {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.border-fondo {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-fondo-rgb), var(--bs-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.border-letra {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-letra-rgb), var(--bs-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.border-boton {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-boton-rgb), var(--bs-border-opacity)) !important;
 }
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
@@ -9852,6 +10127,24 @@ fieldset:disabled .btn {
 }
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.text-fondo {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-fondo-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.text-letra {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-letra-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.text-boton {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-boton-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -9959,6 +10252,24 @@ fieldset:disabled .btn {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.bg-fondo {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-fondo-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.bg-letra {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-letra-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */
+.bg-boton {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-boton-rgb), var(--bs-bg-opacity)) !important;
 }
 
 /* line 67, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_utilities.scss */

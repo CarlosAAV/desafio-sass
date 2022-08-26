@@ -4,19 +4,21 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-/* line 1639, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
-.card .card-img-top, .card .card-body {
-  background-color: #292929;
-}
-
-/* line 1648, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
-.card .card-title, .card .card-text, .card a {
+/* line 1643, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+.card-sass {
+  background-color: #313131;
   color: white;
 }
 
-/* line 1654, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+/* line 1649, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+.card .card-img-top, .card .card-body {
+  background-color: #313131;
+  color: white;
+}
+
+/* line 1656, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card a {
-  background-color: #a535bb;
+  background-color: #b52ab9;
 }
 
 /* line 1, ../../../../../../../desafios/css avanzado/sass/assets/scss/_root.scss */
@@ -50,22 +52,28 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: red;
-  --bs-dark: yellow;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-fondo: #313131;
+  --bs-letra: white;
+  --bs-boton: #b52ab9;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 255, 0, 0;
-  --bs-dark-rgb: 255, 255, 0;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-fondo-rgb: 49, 49, 49;
+  --bs-letra-rgb: 255, 255, 255;
+  --bs-boton-rgb: 181, 42, 185;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Vujahday Script", cursive;
-  --bs-font-monospace: "Vujahday Script", cursive;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
