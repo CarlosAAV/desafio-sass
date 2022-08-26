@@ -4,14 +4,19 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-/* line 1636, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+/* line 1639, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card .card-img-top, .card .card-body {
   background-color: #292929;
 }
 
-/* line 1645, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+/* line 1648, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card .card-title, .card .card-text, .card a {
   color: white;
+}
+
+/* line 1654, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+.card a {
+  background-color: #a535bb;
 }
 
 /* line 1, ../../../../../../../desafios/css avanzado/sass/assets/scss/_root.scss */
@@ -39,22 +44,22 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #ff7edf;
+  --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: white;
-  --bs-dark: #292929;
-  --bs-primary-rgb: 255, 126, 223;
+  --bs-light: red;
+  --bs-dark: yellow;
+  --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 255, 255, 255;
-  --bs-dark-rgb: 41, 41, 41;
+  --bs-light-rgb: 255, 0, 0;
+  --bs-dark-rgb: 255, 255, 0;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -78,8 +83,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ff7edf;
-  --bs-link-hover-color: #cc65b2;
+  --bs-link-color: #0d6efd;
+  --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }

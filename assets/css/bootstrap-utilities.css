@@ -4,14 +4,19 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-/* line 1636, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+/* line 1639, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card .card-img-top, .card .card-body {
   background-color: #292929;
 }
 
-/* line 1645, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+/* line 1648, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card .card-title, .card .card-text, .card a {
   color: white;
+}
+
+/* line 1654, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
+.card a {
+  background-color: #a535bb;
 }
 
 /* line 3, ../../../../../../../desafios/css avanzado/sass/assets/scss/mixins/_clearfix.scss */
@@ -23,8 +28,8 @@
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
 .text-bg-primary {
-  color: #000 !important;
-  background-color: RGBA(255, 126, 223, var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
@@ -60,23 +65,23 @@
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
 .text-bg-light {
   color: #000 !important;
-  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 0, 0, var(--bs-bg-opacity, 1)) !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_color-bg.scss */
 .text-bg-dark {
-  color: #fff !important;
-  background-color: RGBA(41, 41, 41, var(--bs-bg-opacity, 1)) !important;
+  color: #000 !important;
+  background-color: RGBA(255, 255, 0, var(--bs-bg-opacity, 1)) !important;
 }
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-primary {
-  color: #ff7edf !important;
+  color: #0d6efd !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-primary:hover, .link-primary:focus {
-  color: #ff98e5 !important;
+  color: #0a58ca !important;
 }
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
@@ -131,22 +136,22 @@
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-light {
-  color: white !important;
+  color: red !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-light:hover, .link-light:focus {
-  color: white !important;
+  color: #ff3333 !important;
 }
 
 /* line 2, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-dark {
-  color: #292929 !important;
+  color: yellow !important;
 }
 
 /* line 6, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_colored-links.scss */
 .link-dark:hover, .link-dark:focus {
-  color: #212121 !important;
+  color: #ffff33 !important;
 }
 
 /* line 3, ../../../../../../../desafios/css avanzado/sass/assets/scss/helpers/_ratio.scss */

@@ -298,14 +298,17 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       rgb(255, 126, 223) !default;
+$primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         rgb(255, 255, 255) !default;
-$dark:          rgb(41, 41, 41) !default;
+$light:         red !default;
+$dark:          yellow !default;
+$rosado:        rgb(165, 53, 187);
+$negro:         rgb(41, 41, 41);
+$blanco:         rgb(255, 255, 255);
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +320,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1634,22 +1637,23 @@ $pre-color:                         null !default;
 
 .card{
 .card-img-top{
-  background-color: $dark;
+  background-color: $negro;
   
 }
 .card-body{
-@extend .card-img-top;
+  @extend .card-img-top;
 }
 
 
 .card-title{
-  color:$light;
+  color:$blanco;
 }
 .card-text{
  @extend .card-title; 
 } 
 a{
   @extend .card-title;
+  background-color: $rosado;
 }
 }
 
