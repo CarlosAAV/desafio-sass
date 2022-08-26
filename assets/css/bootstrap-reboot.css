@@ -4,17 +4,17 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-/* line 1636, ../../../../../../../desafios/css avanzado/sass/scss/_variables.scss */
+/* line 1636, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card .card-img-top, .card .card-body {
-  background-color: black;
+  background-color: #292929;
 }
 
-/* line 1644, ../../../../../../../desafios/css avanzado/sass/scss/_variables.scss */
+/* line 1645, ../../../../../../../desafios/css avanzado/sass/assets/scss/_variables.scss */
 .card .card-title, .card .card-text, .card a {
   color: white;
 }
 
-/* line 1, ../../../../../../../desafios/css avanzado/sass/scss/_root.scss */
+/* line 1, ../../../../../../../desafios/css avanzado/sass/assets/scss/_root.scss */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -46,7 +46,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: white;
-  --bs-dark: black;
+  --bs-dark: #292929;
   --bs-primary-rgb: 255, 126, 223;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -54,7 +54,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 255, 255, 255;
-  --bs-dark-rgb: 0, 0, 0;
+  --bs-dark-rgb: 41, 41, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -84,7 +84,7 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-/* line 16, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 16, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 *,
 *::before,
 *::after {
@@ -92,13 +92,13 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* line 28, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+  /* line 28, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
   :root {
     scroll-behavior: smooth;
   }
 }
 
-/* line 49, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 49, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -112,7 +112,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 68, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 68, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -121,7 +121,7 @@ hr {
   opacity: 0.25;
 }
 
-/* line 83, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 83, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -129,91 +129,91 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-/* line 93, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 93, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
 
 @media (min-width: 1200px) {
-  /* line 93, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+  /* line 93, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
   h1 {
     font-size: 2.5rem;
   }
 }
 
-/* line 98, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 98, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
 
 @media (min-width: 1200px) {
-  /* line 98, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+  /* line 98, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
   h2 {
     font-size: 2rem;
   }
 }
 
-/* line 103, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 103, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
 
 @media (min-width: 1200px) {
-  /* line 103, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+  /* line 103, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
   h3 {
     font-size: 1.75rem;
   }
 }
 
-/* line 108, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 108, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
 
 @media (min-width: 1200px) {
-  /* line 108, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+  /* line 108, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
   h4 {
     font-size: 1.5rem;
   }
 }
 
-/* line 113, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 113, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h5 {
   font-size: 1.25rem;
 }
 
-/* line 118, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 118, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 129, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 129, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 141, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 141, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 abbr[title] {
   text-decoration: underline dotted;
   cursor: help;
   text-decoration-skip-ink: none;
 }
 
-/* line 150, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 150, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
 
-/* line 159, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 159, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ol,
 ul {
   padding-left: 2rem;
 }
 
-/* line 164, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 164, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ol,
 ul,
 dl {
@@ -221,7 +221,7 @@ dl {
   margin-bottom: 1rem;
 }
 
-/* line 171, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 171, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ol ol,
 ul ul,
 ol ul,
@@ -229,40 +229,40 @@ ul ol {
   margin-bottom: 0;
 }
 
-/* line 178, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 178, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 184, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 184, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
 
-/* line 192, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 192, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 blockquote {
   margin: 0 0 1rem;
 }
 
-/* line 201, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 201, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 b,
 strong {
   font-weight: bolder;
 }
 
-/* line 211, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 211, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 small {
   font-size: 0.875em;
 }
 
-/* line 218, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 218, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 mark {
   padding: 0.1875em;
   background-color: var(--bs-highlight-bg);
 }
 
-/* line 229, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 229, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 sub,
 sup {
   position: relative;
@@ -271,34 +271,34 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 237, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 237, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 sub {
   bottom: -.25em;
 }
 
-/* line 238, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 238, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 sup {
   top: -.5em;
 }
 
-/* line 243, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 243, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 a {
   color: var(--bs-link-color);
   text-decoration: underline;
 }
 
-/* line 247, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 247, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 a:hover {
   color: var(--bs-link-hover-color);
 }
 
-/* line 259, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 259, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 269, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 269, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 pre,
 code,
 kbd,
@@ -307,7 +307,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 281, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 281, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 pre {
   display: block;
   margin-top: 0;
@@ -316,26 +316,26 @@ pre {
   font-size: 0.875em;
 }
 
-/* line 290, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 290, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 pre code {
   font-size: inherit;
   color: inherit;
   word-break: normal;
 }
 
-/* line 297, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 297, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 code {
   font-size: 0.875em;
   color: var(--bs-code-color);
   word-wrap: break-word;
 }
 
-/* line 303, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 303, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 a > code {
   color: inherit;
 }
 
-/* line 308, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 308, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 kbd {
   padding: 0.1875rem 0.375rem;
   font-size: 0.875em;
@@ -344,30 +344,30 @@ kbd {
   border-radius: 0.25rem;
 }
 
-/* line 315, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 315, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 kbd kbd {
   padding: 0;
   font-size: 1em;
 }
 
-/* line 327, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 327, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 figure {
   margin: 0 0 1rem;
 }
 
-/* line 334, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 334, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 img,
 svg {
   vertical-align: middle;
 }
 
-/* line 344, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 344, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 table {
   caption-side: bottom;
   border-collapse: collapse;
 }
 
-/* line 349, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 349, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -375,13 +375,13 @@ caption {
   text-align: left;
 }
 
-/* line 360, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 360, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
 
-/* line 366, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 366, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 thead,
 tbody,
 tfoot,
@@ -393,22 +393,22 @@ th {
   border-width: 0;
 }
 
-/* line 382, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 382, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 label {
   display: inline-block;
 }
 
-/* line 389, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 389, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 button {
   border-radius: 0;
 }
 
-/* line 399, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 399, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-/* line 405, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 405, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 input,
 button,
 select,
@@ -420,33 +420,33 @@ textarea {
   line-height: inherit;
 }
 
-/* line 417, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 417, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 424, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 424, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 [role="button"] {
   cursor: pointer;
 }
 
-/* line 428, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 428, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 select {
   word-wrap: normal;
 }
 
-/* line 434, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 434, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 select:disabled {
   opacity: 1;
 }
 
-/* line 442, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 442, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 [list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not([type="time"])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
 
-/* line 451, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 451, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -454,7 +454,7 @@ button,
   -webkit-appearance: button;
 }
 
-/* line 458, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 458, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -462,18 +462,18 @@ button:not(:disabled),
   cursor: pointer;
 }
 
-/* line 466, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 466, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
 
-/* line 473, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 473, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 484, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 484, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 fieldset {
   min-width: 0;
   padding: 0;
@@ -481,7 +481,7 @@ fieldset {
   border: 0;
 }
 
-/* line 496, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 496, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 legend {
   float: left;
   width: 100%;
@@ -492,18 +492,18 @@ legend {
 }
 
 @media (min-width: 1200px) {
-  /* line 496, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+  /* line 496, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
   legend {
     font-size: 1.5rem;
   }
 }
 
-/* line 505, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 505, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 legend + * {
   clear: left;
 }
 
-/* line 513, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 513, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
@@ -514,12 +514,12 @@ legend + * {
   padding: 0;
 }
 
-/* line 523, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 523, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ::-webkit-inner-spin-button {
   height: auto;
 }
 
-/* line 533, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 533, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
@@ -533,44 +533,44 @@ legend + * {
   direction: ltr;
 }
 */
-/* line 554, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 554, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 560, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 560, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-/* line 568, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 568, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
-/* line 575, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 575, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 output {
   display: inline-block;
 }
 
-/* line 581, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 581, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 iframe {
   border: 0;
 }
 
-/* line 589, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 589, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 summary {
   display: list-item;
   cursor: pointer;
 }
 
-/* line 599, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 599, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 progress {
   vertical-align: baseline;
 }
 
-/* line 608, ../../../../../../../desafios/css avanzado/sass/scss/_reboot.scss */
+/* line 608, ../../../../../../../desafios/css avanzado/sass/assets/scss/_reboot.scss */
 [hidden] {
   display: none !important;
 }
